@@ -106,7 +106,7 @@ extract_data_mails <- function(num_correos = 10){
 
 
 
-  x <- contenedor[duplicated(contenedor),]
+  x <- contenedor[!duplicated(contenedor),]
 
 
   # Write data in excel
